@@ -1,0 +1,49 @@
+#my-header {
+	font-size: 20px;
+	background-color: pink;
+	height: 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0.5rem 1rem;
+}
+#my-header > h1 {
+	flex: 0;
+}
+#my-header > .menu {
+	margin: 0.5rem 1rem;
+}
+
+#my-header > ul > li {
+	list-style: none;
+	margin-left: 1ch;
+}
+
+#my-header > ul > li > a {
+	text-decoration: none;
+	color: black;
+}
+
+#my-header > ul {
+	display: none;
+}
+@media screen and (max-width: 799px) {
+	#my-header > .menu {
+		display: block;
+	}
+}
+@media screen and (min-width: 800px) {
+	#my-header > ul {
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		flex-wrap: no-wrap;
+	}
+	#my-header > .menu {
+		display: none;
+	}
+}

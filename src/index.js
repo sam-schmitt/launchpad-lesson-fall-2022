@@ -4,15 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import About from "./pages/about";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <div>Hello world!</div>,
+		element: <App />,
 	},
 	{
-		path: "/about",
-		element: <div>About Us</div>,
+		path: "about",
+		element: <About />,
 	},
 ]);
 
